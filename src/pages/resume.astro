@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TimeLineElement from '../components/cv/TimeLine.astro';
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="time-line-container mb-10">
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Professional Summary</div>
+    </div>
+
+    <div class="mb-10 text-justify">
+      With a background in Electrical Engineering and self-taught expertise as a
+      full-stack developer, I possess strong knowledge of data structures,
+      algorithms, and Object-Oriented Programming. Accumulating over a year of
+      practical project experience, I've successfully completed various projects
+      leveraging React, Node.js, Express, and PostgreSQL technologies.
+      Additionally, I'm proficient in using essential tools such as git, bash,
+      docker, and nginx.
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Experience</div>
+    </div>
+
+    <TimeLineElement
+      title="Junior Software Developer"
+      subtitle="From January, 2024 to Present at AstronLab, Bangladesh."
+    >
+      In my current position, I serve as a full-stack developer. My
+      responsibilities include developing the frontend using Svelte and the
+      backend utilizing Golang. Additionally, we implement gRPC for efficient
+      communication within the project.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Freelance Software Developer"
+      subtitle="From September 2022 to December, 2023"
+    >
+      During my time as a student, I gained experience as a freelance software
+      developer. As part of a team, we developed multiple web applications for
+      local businesses. My role primarily involved frontend development using
+      React, and I also contributed to backend development using Node.js and
+      Express.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Bachelor of Science - Electrical and Electronic Engineering"
+      subtitle="2017 to 2023 at Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj, Bangladesh."
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <div class="space-y-4 sm:space-y-2">
+    <div class="flex flex-col sm:flex-row justify-between">
+      <b class="mb-2 sm:mb-0">Frontend:</b>
+      <span>ReactJS, Redux, Svelte, TailwindCSS, MUI</span>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between">
+      <b class="mb-2 sm:mb-0">Backend:</b>
+      <span>Golang, Typescript, NodeJS (express), TypeORM</span>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between">
+      <b class="mb-2 sm:mb-0">Database:</b>
+      <span>PostgreSQL, MongoDB, Redis, Firebase</span>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between">
+      <b class="mb-2 sm:mb-0">Others:</b>
+      <span>git, Docker, Cloudflare, Nginx, WebSockets, gRPC, Bash, Linux</span>
+    </div>
+  </div>
+</BaseLayout>
